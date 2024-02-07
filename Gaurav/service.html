@@ -5,13 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Louis Vuitton Services | LOUIS VUITTON</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/service.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("../global-templates/header.html");
+        $("#footer").load("../global-templates/footer.html");
+      });
+    </script>
 </head>
 
 <body>
+    <header id="header"></header>
+    <div id="container">
+        
     <!----------------------------------------------- FIRST SECTION ----------------------------------------------->
     <section class="first overlay">
-        <video src="videos/services-video-1.mp4" autoplay muted loop></video>
+        <video src="videos/Services-Page/videos/services-video-1.mp4" autoplay muted loop></video>
         <div class="content">
             <h1>Louis Vuitton Services</h1>
             <p class="small-text">Scroll to Discover</p>
@@ -43,13 +53,15 @@
     </section>
     <!----------------------------------------------- FIFTH SECTION ----------------------------------------------->
     <section class="fifth">
-        <video src="videos/services-video-2.mp4" autoplay muted loop></video>
+        <video src="videos/Services-Page/videos/services-video-2.mp4" autoplay muted loop></video>
         <div class="content-fifth">
             <h2>How can we help you?</h2>
             <p>Wherever you are, Louis Vuitton Client Advisors will be delighted to assist you.</p>
             <a href="https://in.louisvuitton.com/eng-in/contact-us">Contact Us</a>
         </div>
     </section>
+    </div>
+    <footer id="footer"></footer>
 </body>
 
 </html>

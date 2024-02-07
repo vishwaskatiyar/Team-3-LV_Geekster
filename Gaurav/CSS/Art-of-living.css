@@ -8,7 +8,7 @@
 html{
     font-size: 62.5%;
 }
-body {
+.container {
     color: #19110b;
     font-family: "Louis Vuitton Web","Helvetica Neue","Helvetica",Arial,sans-serif;
     font-size: 1rem;
@@ -216,6 +216,13 @@ body {
     display: none;
 }
 
+.mobile-media{
+    display: none;
+}
+
+.vid-content-mobile{
+    display: none;
+}
 /*------------------------------------------------- FOR TABLET  -------------------------------------------------*/
 
 @media screen and  (min-width:426px) and (max-width: 768px) {

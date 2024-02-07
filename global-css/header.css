@@ -135,10 +135,10 @@ header#header nav  .mainMenu .main .sub > .open-icon:hover .superMenu{
     display: flex;
 }
 
-span{
+header#header span{
     padding-right: 5px;
 }
-b{
+header#header b{
     padding-right: 5px;
     padding-top: 16px;
     padding-bottom: 16px;
