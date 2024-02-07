@@ -8,7 +8,7 @@
 html{
     font-size: 62.5%;
 }
-.container {
+#container {
     color: #19110b;
     font-family: "Louis Vuitton Web","Helvetica Neue","Helvetica",Arial,sans-serif;
     font-size: 1rem;
@@ -226,6 +226,7 @@ html{
 /*------------------------------------------------- FOR TABLET  -------------------------------------------------*/
 
 @media screen and  (min-width:426px) and (max-width: 768px) {
+
     .color-sect .lagoon img{
         width: 9px;
         height: 9px;
@@ -283,6 +284,7 @@ html{
 
 /*-------------------------------------------------- FOR MOBLIE --------------------------------------------------*/
 @media screen and (max-width:425px){
+
     .second-sect{
         display: grid;
         grid-template-columns: repeat(2 , 1fr);
