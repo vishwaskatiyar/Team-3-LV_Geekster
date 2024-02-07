@@ -39,7 +39,7 @@ a{
 /* ---------------------------------global css is completed for this page------------------------------- */
 
 /*----------------------- here the basic css is started------------------------------- */
-.container nav{
+#container nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,72 +53,72 @@ a{
     font-size: 13px;
     font-weight: lighter;
     line-height: 16px;
-    z-index: 2;
+    /* z-index: 2; */
 }
-.container nav .tags{
+#container nav .tags{
     display: inline-flex;
     column-gap: 2rem;
 }
-.container header .intro{
+#container header .intro{
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 5vw;
 }
-.container header .intro img{
+#container header .intro img{
     height: 89vh;
     margin-top: 16px;
     margin-bottom: 16px;
 }
-.container header .intro p{
+#container header .intro p{
     font-size: 13px;
     font-weight: lighter;
 }
-.container main{
+#container main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     row-gap: 5rem;
     text-align: center;
 }
-.container main article{
+#container main article{
     width: 32.5rem;
     margin: auto;
     /* border:1px solid black; */
 }
-.container main article h1{
+#container main article h1{
     /* background-color: orange; */
     font-weight: lighter;
 }
-.container main article p{
+#container main article p{
     margin-top: 16px;
     /* background-color: red; */
 }
-.container main article span{
+#container main article span{
     display: inline-flex;
     column-gap: 2rem;
     margin-top: 22px;
     /* background-color: yellow; */
 }
 
-.container main .items{
+#container main .items{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     background-color: rgb(246,246,246);
 }
-.container main .items .content{
+#container main .items .content{
     cursor: pointer;
 }
-.container main .items .image{
+#container main .items .image{
     position: relative;
     background-image: linear-gradient(185deg,rgb(207,207,207),rgb(232,232,232), rgb(246,246,246));
     overflow: hidden;
 }
-.container main .items .image img{
+#container main .items .image img{
     width: 100%;
     aspect-ratio: 1/1;
 }
-.container main .items .details {
+#container main .items .details {
     text-align: left;
     display: flex;
     align-items: center;
@@ -128,52 +128,52 @@ a{
     padding-left: 3.333%;
     padding-right: 3.333%;
 }
-/* .container main .items .name{
+/* #container main .items .name{
 } */
-.container main .like{
+#container main .like{
    font-size: 20px;
    position: absolute;
    top:4%;
    right: 4%;
 }
-.container main .like:hover i{
+#container main .like:hover i{
     scale: 1.2;
 }
-.container main .bigger-frame{
+#container main .bigger-frame{
     width: 100vw;
     aspect-ratio: 1/0.56274;
 }
-.container main .small-frame{
+#container main .small-frame{
     width: 825px;
     height: 464px;
     margin: auto;
 }
 
-.container main .bag-sizes{
+#container main .bag-sizes{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
-.container main .bag-sizes img{
+#container main .bag-sizes img{
     width: 100%;
     object-fit: contain;
 }
-.container main .bag-sizes .sizes{
+#container main .bag-sizes .sizes{
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 5vw;
 }
-.container main .bag-sizes .sizes .image{
+#container main .bag-sizes .sizes .image{
     width: 50%;
     position: relative;
     background-image: linear-gradient(160deg,rgb(223,223,223), rgb(246,246,246));
     overflow: hidden;
     aspect-ratio: 4/5;
 }
-.container main .bag-sizes .sizes .image span{
+#container main .bag-sizes .sizes .image span{
     font-size: 14px;
 }
-.container main .bag-sizes .sizes .image .like{
+#container main .bag-sizes .sizes .image .like{
     position: absolute;
     font-size: 14px;
 }
@@ -187,31 +187,31 @@ a{
 
 @media screen and (max-width:64rem) {
     
-    .container header .intro span{
+    #container header .intro span{
         display: none;
     }
-    .container header .intro .image{
+    #container header .intro .image{
         height: fit-content;
     }
-    .container header .intro .image img{
+    #container header .intro .image img{
         height: auto;
         object-fit: contain;
         width: calc(100vw - 64px);
     }
-    .container main .bag-sizes{
+    #container main .bag-sizes{
         grid-template-columns: 1fr;
         row-gap: 2rem;
     }
-    .container main .bag-sizes > img{
+    #container main .bag-sizes > img{
         padding-left: 2rem;
         padding-right: 2rem;
     }
-    .container main .bag-sizes .sizes span{
+    #container main .bag-sizes .sizes span{
         position: relative;
-    }.container main .bag-sizes .sizes .image{
+    }#container main .bag-sizes .sizes .image{
         width: 100%;
     }
-    .container main .small-frame{
+    #container main .small-frame{
         height: auto;
         object-fit: contain;
         width: calc(100vw - 64px);
@@ -221,7 +221,7 @@ a{
 /* ----------------- 48 rem ------------------- */
 
 @media screen and (max-width:48rem) {
-    .container main .items{
+    #container main .items{
         grid-template-columns: repeat(2,1fr);
     }
 }

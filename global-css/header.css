@@ -6,11 +6,11 @@
 body{
     overflow-y: scroll;
 }
-header.header{
+header#header{
     position: relative;
     z-index: 1;
 }
-header.header .logo{
+header#header .logo{
     text-align: center;
     font-size: 36px;
     line-height: 40px;
@@ -18,19 +18,19 @@ header.header .logo{
     font-weight: bolder;
     /* border: 1px solid gray; */
 }
-header.header nav{
+header#header nav{
     position: absolute;
     top: 0;
     /* border: 1px solid gray; */
 }
-header.header .contactUs{
+header#header .contactUs{
     position: absolute;
     right: 0;
     top: 0;
     /* border: 1px solid gray; */
     padding: 16px 22px;
 }
-header.header nav .menu-icon{
+header#header nav .menu-icon{
     display: inline-flex;
     padding: 16px;
     font-size: 24px;
@@ -38,25 +38,25 @@ header.header nav .menu-icon{
     color: #19110b;
     /* border: 1px solid gray; */
 }
-header.header nav .menu-icon .menu-bar{
+header#header nav .menu-icon .menu-bar{
     position: absolute;
     left: 0;
     top: 59px;
 }
-header.header nav .menu-icon > i:hover{
+header#header nav .menu-icon > i:hover{
     scale: 1.1;
     font-weight: bold;
 }
-header.header nav .menu-icon > span{
+header#header nav .menu-icon > span{
     font-size: 14px;
     padding-left: 5px;
 }
-header.header nav {
+header#header nav {
     position: absolute;
     top: 0;
     display: flex;
 }
-header.header nav  .mainMenu{
+header#header nav  .mainMenu{
     display: none;
     position: relative;
     flex-direction: column;
@@ -68,10 +68,10 @@ header.header nav  .mainMenu{
     background-color: white;
     overflow-y: visible;
 }
-header.header nav .menu-icon:hover .mainMenu{
+header#header nav .menu-icon:hover .mainMenu{
     display: flex;
 }
-header.header nav  .mainMenu .main{
+header#header nav  .mainMenu .main{
     display: flex;
     justify-content: space-between;
     width: 25vw;
@@ -79,10 +79,10 @@ header.header nav  .mainMenu .main{
     padding-left: 10px;
     border: 0.1px solid gray;
 }
-header.header nav  .mainMenu .main:hover{
+header#header nav  .mainMenu .main:hover{
     background-color: rgb(15,15,15,0.2);
 }
-header.header nav  .mainMenu .main .subMenu{
+header#header nav  .mainMenu .main .subMenu{
     display: none;
     position: absolute;
     top: 0;
@@ -92,7 +92,7 @@ header.header nav  .mainMenu .main .subMenu{
     color: #19110b;
     background-color: white;
 }
-header.header nav  .mainMenu .main .subMenu .sub{
+header#header nav  .mainMenu .main .subMenu .sub{
     display: flex;
     justify-content: space-between;
     width: 25vw;
@@ -101,10 +101,10 @@ header.header nav  .mainMenu .main .subMenu .sub{
     border: 0.1px solid gray;
     border-left-color: transparent;
 }
-header.header nav  .mainMenu .sub:hover{
+header#header nav  .mainMenu .sub:hover{
     background-color: rgb(15,15,15,0.2);
 }
-header.header nav  .mainMenu .main .subMenu .sub .superMenu{
+header#header nav  .mainMenu .main .subMenu .sub .superMenu{
     display: none;
     position: absolute;
     top: 0;
@@ -114,7 +114,7 @@ header.header nav  .mainMenu .main .subMenu .sub .superMenu{
     color: #19110b;
     background-color: white;
 }
-header.header nav  .mainMenu .main .subMenu .sub .superMenu .super{
+header#header nav  .mainMenu .main .subMenu .sub .superMenu .super{
     display: flex;
     justify-content: space-between;
     width: 25vw;
@@ -125,13 +125,13 @@ header.header nav  .mainMenu .main .subMenu .sub .superMenu .super{
     text-decoration: none;
     color: #19110b;
 }
-header.header nav  .mainMenu .super:hover{
+header#header nav  .mainMenu .super:hover{
     background-color: rgb(15,15,15,0.2);
 }
-header.header nav  .mainMenu .main > .open-icon:hover .subMenu{
+header#header nav  .mainMenu .main > .open-icon:hover .subMenu{
     display: flex;
 }
-header.header nav  .mainMenu .main .sub > .open-icon:hover .superMenu{
+header#header nav  .mainMenu .main .sub > .open-icon:hover .superMenu{
     display: flex;
 }
 
@@ -145,7 +145,7 @@ b{
     /* border: 2px solid blue; */
 }
 
-header.header nav .search-icon{
+header#header nav .search-icon{
     display: inline-flex;
     padding: 16px;
     font-size: 24px;
@@ -153,15 +153,15 @@ header.header nav .search-icon{
     color: #19110b;
     /* border: 1px solid gray; */
 }
-header.header nav .search-icon > i:hover{
+header#header nav .search-icon > i:hover{
     scale: 1.1;
     font-weight: bold;
 }
-header.header nav .search-icon > span{
+header#header nav .search-icon > span{
     font-size: 14px;
     padding-left: 5px;
 }
-header.header nav .search-icon .search-bar{
+header#header nav .search-icon .search-bar{
     display: none;
     position: absolute;
     left: 0;
@@ -171,49 +171,49 @@ header.header nav .search-icon .search-bar{
     padding: 16px 0;
     background-color: rgb(15,15,15,0.3);
 }
-header.header nav .search-icon .search-bar section{
+header#header nav .search-icon .search-bar section{
     display: flex;
     justify-content: stretch;
     height: 2rem;
     border: 1px solid lightgray;
 }
-header.header nav .search-icon .search-bar section input{
+header#header nav .search-icon .search-bar section input{
     width: calc(50vw - 32px);
     border-style: none;
 }
-header.header nav .search-icon .search-bar section button{
+header#header nav .search-icon .search-bar section button{
     width: 32px;
     border-style: none;
 }
-header.header nav .search-icon:hover .search-bar{
+header#header nav .search-icon:hover .search-bar{
     display: flex;
 }
 
 @media screen and (max-width:64rem){
-    header.header .contactUs span:nth-child(3){
+    header#header .contactUs span:nth-child(3){
         display: none;
     }
 }
 @media screen and (max-width:48rem){
-    header.header .contactUs{
+    header#header .contactUs{
         display: none;
     }
-    header.header .logo{
+    header#header .logo{
         font-size: 26px;
     }
-    header.header nav .menu-icon > span{
+    header#header nav .menu-icon > span{
         display: none;
     }
-    header.header nav {
+    header#header nav {
         display: flex;
         width: 100vw;
         justify-content: space-between;
     }
-    header.header nav  .mainMenu{
+    header#header nav  .mainMenu{
         font-size: 16px;
         line-height: 20px;
     }
-    header.header nav .search-icon > span{
+    header#header nav .search-icon > span{
         display: none;
     }
 }

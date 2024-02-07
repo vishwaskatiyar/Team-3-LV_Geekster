@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latest</title>
     <link rel="stylesheet" href="./css/latest.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("../global-templates/header.html");
+        $("#footer").load("../global-templates/footer.html");
+      });
+    </script>
   </head>
   <body>
-    <header>Header</header>
-    <div class="container">
+    <header id="header"></header>
+    <div id="container">
       <nav class="filter-box">
         <span class="tag">The Latest</span>
         <span class="filter">
@@ -303,6 +310,6 @@
         <hr />
       </footer>
     </div>
-    <footer>Footer</footer>
+    <footer id="footer"></footer>
   </body>
 </html>

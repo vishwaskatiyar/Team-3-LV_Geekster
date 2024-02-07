@@ -10,10 +10,17 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("../global-templates/header.html");
+        $("#footer").load("../global-templates/footer.html");
+      });
+    </script>
   </head>
   <body>
-    <header>Header</header>
-    <div class="container">
+    <header id="header"></header>
+    <div id="container">
       <nav>
         <div class="name">The Capucines</div>
         <div class="tags">
@@ -202,7 +209,7 @@
         </article>
       </main>
     </div>
-    <footer>Footer</footer>
+    <footer id="footer"></footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
