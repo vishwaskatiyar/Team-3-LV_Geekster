@@ -12,6 +12,14 @@
         $("#footer").load("../global-templates/footer.html");
       });
     </script>
+    <script>
+      var elements = document.querySelectorAll(".super");
+      var linkAddresses = [];
+      elements.forEach(function (element) {
+        linkAddresses.push(element.href);
+      });
+      var linkAddressesString = linkAddresses.join("../");
+    </script>
   </head>
   <body>
     <header id="header"></header>
