@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Louis Vuitton Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a{
+    /* text-decoration: none; */
+    color: black;
+    text-underline-offset: 3px;
+}
+.item-frame{    
+    aspect-ratio: 4/5;
+}
+.item-img-frame{
+    aspect-ratio: 1/1;
+}
+.details-frame{
+    aspect-ratio: 4/1;
+}
+.scroll-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 26px;
+    aspect-ratio: 1;
+    
+}
+.scroll-button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+/* ---------------------------------global css is completed for this page------------------------------- */
+
+/*----------------------- here the basic css is started------------------------------- */
+#container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3.333vw;
+    padding-right: 3.333vw;
+    min-height: 4rem;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(255,255,255);
+    border-top: 1px solid black;
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 16px;
+    /* z-index: 2; */
+}
+#container nav .tags{
+    display: inline-flex;
+    column-gap: 2rem;
+}
+#container header .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vw;
+}
+#container header .intro img{
+    height: 89vh;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+#container header .intro p{
+    font-size: 13px;
+    font-weight: lighter;
+}
+#container main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 5rem;
+    text-align: center;
+}
+#container main article{
+    width: 32.5rem;
+    margin: auto;
+    /* border:1px solid black; */
+}
+#container main article h1{
+    /* background-color: orange; */
+    font-weight: lighter;
+}
+#container main article p{
+    margin-top: 16px;
+    /* background-color: red; */
+}
+#container main article span{
+    display: inline-flex;
+    column-gap: 2rem;
+    margin-top: 22px;
+    /* background-color: yellow; */
+}
+
+#container main .items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(246,246,246);
+}
+#container main .items .content{
+    cursor: pointer;
+}
+#container main .items .image{
+    position: relative;
+    background-image: linear-gradient(185deg,rgb(207,207,207),rgb(232,232,232), rgb(246,246,246));
+    overflow: hidden;
+}
+#container main .items .image img{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+#container main .items .details {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    aspect-ratio: 4/1;
+    font-size: 12px;
+    /* border: 1px solid blue; */
+    padding-left: 3.333%;
+    padding-right: 3.333%;
+}
+/* #container main .items .name{
+} */
+#container main .like{
+   font-size: 20px;
+   position: absolute;
+   top:4%;
+   right: 4%;
+}
+#container main .like:hover i{
+    scale: 1.2;
+}
+#container main .bigger-frame{
+    width: 100vw;
+    aspect-ratio: 1/0.56274;
+}
+#container main .small-frame{
+    width: 825px;
+    height: 464px;
+    margin: auto;
+}
+
+#container main .bag-sizes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#container main .bag-sizes img{
+    width: 100%;
+    object-fit: contain;
+}
+#container main .bag-sizes .sizes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vw;
+}
+#container main .bag-sizes .sizes .image{
+    width: 50%;
+    position: relative;
+    background-image: linear-gradient(160deg,rgb(223,223,223), rgb(246,246,246));
+    overflow: hidden;
+    aspect-ratio: 4/5;
+}
+#container main .bag-sizes .sizes .image span{
+    font-size: 14px;
+}
+#container main .bag-sizes .sizes .image .like{
+    position: absolute;
+    font-size: 14px;
+}
+ 
+/*----------------------- here the basic css is completed------------------------------- */
+
+/* -------------------------@ media width Started --------------------------------------- */
+
+
+/* --------------------- 64rem -------------------- */
+
+@media screen and (max-width:64rem) {
+    
+    #container header .intro span{
+        display: none;
+    }
+    #container header .intro .image{
+        height: fit-content;
+    }
+    #container header .intro .image img{
+        height: auto;
+        object-fit: contain;
+        width: calc(100vw - 64px);
+    }
+    #container main .bag-sizes{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+    #container main .bag-sizes > img{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #container main .bag-sizes .sizes span{
+        position: relative;
+    }#container main .bag-sizes .sizes .image{
+        width: 100%;
+    }
+    #container main .small-frame{
+        height: auto;
+        object-fit: contain;
+        width: calc(100vw - 64px);
+    }
+}
+
+/* ----------------- 48 rem ------------------- */
+
+@media screen and (max-width:48rem) {
+    #container main .items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
