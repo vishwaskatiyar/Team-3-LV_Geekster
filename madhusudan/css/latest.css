@@ -10,9 +10,6 @@
     letter-spacing: .025rem;
     line-height: 1.25rem;
 }
-/* body > #header{
-    position: fixed;
-} */
 #container nav{
     display: flex;
     justify-content: space-between;
@@ -27,7 +24,7 @@
     font-size: 13px;
     font-weight: lighter;
     line-height: 16px;
-    /* z-index: 2; */
+    z-index: 2;
 }
 #container .filter-box span{
     display: inline-flex;
