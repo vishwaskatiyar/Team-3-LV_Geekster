@@ -7,8 +7,10 @@ body{
     overflow-y: scroll;
 }
 header#header{
-    position: relative;
+    position: sticky;
     z-index: 1;
+    background-color: white;
+    height: 4rem;
 }
 header#header .logo{
     text-align: center;
