@@ -18,13 +18,13 @@
     padding-right: 3.333vw;
     min-height: 4rem;
     position: sticky;
-    top: 4rem;
+    top: 0px;
     background-color: rgb(255,255,255);
     border-top: 1px solid black;
     font-size: 13px;
     font-weight: lighter;
     line-height: 16px;
-    z-index: 2;
+    /* z-index: 2; */
 }
 #container .filter-box span{
     display: inline-flex;
@@ -150,5 +150,14 @@
 @media screen and (max-width:768px){
     #container .contents{
         grid-template-columns: 1fr 1fr
+    }
+    #container footer > div{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+    #container footer button{
+        padding: 16px 50px;
+        border-radius: 25px;
     }
 }
