@@ -6,6 +6,7 @@
 body{
     overflow-y: scroll;
 }
+
 header#header{
     position: sticky;
     z-index: 1;
@@ -44,7 +45,7 @@ header#header nav .menu-icon{
 header#header nav .menu-icon .menu-bar{
     position: absolute;
     left: 0;
-    top: 59px;
+    top: 4rem;
 }
 header#header nav .menu-icon > i:hover{
     scale: 1.1;
@@ -174,7 +175,7 @@ header#header nav .search-icon .search-bar{
     display: none;
     position: absolute;
     left: 0;
-    top: 57px;
+    top: 4rem;
     justify-content: center;
     width: 100vw;
     padding: 16px 0;
