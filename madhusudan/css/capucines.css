@@ -82,7 +82,7 @@ a{
     text-align: center;
 }
 #container main article{
-    width: 32.5rem;
+    max-width: 32.5rem;
     margin: auto;
     /* border:1px solid black; */
 }
