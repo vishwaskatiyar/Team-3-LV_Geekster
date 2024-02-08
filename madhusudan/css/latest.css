@@ -10,6 +10,9 @@
     letter-spacing: .025rem;
     line-height: 1.25rem;
 }
+/* body > #header{
+    position: fixed;
+} */
 #container nav{
     display: flex;
     justify-content: space-between;
@@ -18,7 +21,7 @@
     padding-right: 3.333vw;
     min-height: 4rem;
     position: sticky;
-    top: 0px;
+    top: 4rem;
     background-color: rgb(255,255,255);
     border-top: 1px solid black;
     font-size: 13px;
