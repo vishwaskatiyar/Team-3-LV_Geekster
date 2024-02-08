@@ -3,15 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="page-name" content="Latest" />
     <title>Latest</title>
     <link rel="stylesheet" href="./css/latest.css" />
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(function () {
-        $("#header").load("../global-templates/header.html");
+        $("#header").load("../global-templates/header.html", function () {
+          $(function () {
+            setTimeout(function () {
+              $("#myScript").load("../global-script/script.js");
+            }, 2000);
+          });
+        });
         $("#footer").load("../global-templates/footer.html");
       });
     </script>
+<<<<<<< HEAD
     <script>
       var elements = document.querySelectorAll(".super");
       var linkAddresses = [];
@@ -20,9 +29,12 @@
       });
       var linkAddressesString = linkAddresses.join("../");
     </script>
+=======
+    <script id="myScript"></script>
+>>>>>>> 45d7d2c950a0ca5d1ba6c73a7f06bfa2b06efdc8
   </head>
   <body>
-    <header id="header"></header>
+    <header id="header" style="position: sticky; top: 0; z-index: 3;"></header>
     <div id="container">
       <nav class="filter-box">
         <span class="tag">The Latest</span>
@@ -58,7 +70,7 @@
             </section>
           </div>
         </section>
-        <section class="content content5">
+        <section class="content content3">
           <div class="image"><img src="./images/content/3.png" alt="" /></div>
           <div class="details">
             <div class="name">Louisette Signature Ring</div>
@@ -71,7 +83,7 @@
             </section>
           </div>
         </section>
-        <section class="content content6">
+        <section class="content content4">
           <div class="image"><img src="./images/content/4.png" alt="" /></div>
           <div class="details">
             <div class="name">Baby Louis Necklace</div>
@@ -84,7 +96,7 @@
             </section>
           </div>
         </section>
-        <section class="content content7">
+        <section class="content content5">
           <div class="image"><img src="./images/content/5.png" alt="" /></div>
           <div class="details">
             <div class="name">Monogram Print Pajama Shirt</div>
@@ -97,7 +109,7 @@
             </section>
           </div>
         </section>
-        <section class="content content8">
+        <section class="content content6">
           <div class="image"><img src="./images/content/6.png" alt="" /></div>
           <div class="details">
             <div class="name">Graphic IV Print Tank Dress</div>
@@ -110,7 +122,7 @@
             </section>
           </div>
         </section>
-        <section class="content content9">
+        <section class="content content7">
           <div class="image"><img src="./images/content/7.png" alt="" /></div>
           <div class="details">
             <div class="name">Louisette Signature Ring</div>
@@ -266,7 +278,7 @@
             </section>
           </div>
         </section>
-        <section class="content content3">
+        <section class="content content21">
           <div class="image"><img src="./images/content/19.png" alt="" /></div>
           <div class="details">
             <div class="name">Nano Noé</div>
@@ -279,7 +291,7 @@
             </section>
           </div>
         </section>
-        <section class="content content4">
+        <section class="content content22">
           <div class="image"><img src="./images/content/20.png" alt="" /></div>
           <div class="details">
             <div class="name">Tulle Insert Monogram Jacquard Dress</div>

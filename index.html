@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <meta name="page-name" content="Home" />
+    <meta name="page-description" content="Your Page Description" />
 
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./global-css/header.css" />
+    <link rel="stylesheet" href="./global-css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,7 +39,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(function () {
-        $("#header").load("./global-templates/header.html");
+        $("#header").load("./global-templates/header.html", function () {
+          $("#myScript").load("../global-script/script.js");
+        });
+        // $("#header").load("./global-templates/header.html");
         $("#footer").load("./global-templates/footer.html");
       });
     </script>
@@ -43,7 +50,7 @@
     <link rel="stylesheet" href="global-css\footer.css" />
   </head>
   <body>
-    <header id="header"></header>
+    <header id="header" style="position: sticky; top: 0; z-index: 3"></header>
     <div id="container">
       <section class="videobg" id="video1">
         <video
@@ -162,5 +169,6 @@
       </section>
     </div>
     <footer id="footer"></footer>
+    <script id="myScript"></script>
   </body>
 </html>

@@ -151,4 +151,13 @@
     #container .contents{
         grid-template-columns: 1fr 1fr
     }
+    #container footer > div{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+    #container footer button{
+        padding: 16px 50px;
+        border-radius: 25px;
+    }
 }
