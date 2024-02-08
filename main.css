@@ -103,15 +103,16 @@ body > #container section.imagebg {
 
   /* background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)), url('assets/Hero\ Pages/i1.jpg'); */
 
+  background-size: cover;
+  background-position: center;
+}
+#image1 {
   background-image: linear-gradient(
       to bottom,
       transparent 50%,
       rgba(0, 0, 0, 0.85)
     ),
     url("assets/Hero\ Pages/1st image of page.webp");
-
-  background-size: cover;
-  background-position: center;
 }
 
 #image2 {
