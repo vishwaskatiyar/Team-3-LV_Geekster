@@ -29,8 +29,8 @@
                       <section class="open-icon">
                         <b>></b>
                         <div class="superMenu">
-                          <a href="#" class="super">superMenu</a>
-                          <a href="#" class="super">superMenu</a>
+                          <a href="madhusudan/gifts-for-Women.html" class="super">For Women</a>
+                          <a href="#" class="super">For Men</a>
                         </div>
                       </section>
                     </div>
@@ -533,7 +533,7 @@
                         <b>></b>
                         <div class="superMenu">
                           <a
-                            href="Gaurav\Art-Of-Living-Page\index.html"
+                            href="Gaurav\Art-Of-Living.html"
                             class="super"
                             >Art of Living Campaign</a
                           >
@@ -605,7 +605,7 @@
                         <b>></b>
                         <div class="superMenu">
                           <a
-                            href="Gaurav\Services-Page\index.html"
+                            href="Gaurav\service.html"
                             class="super"
                             >Personalisation</a
                           >
@@ -703,6 +703,26 @@
         <span>My LV</span>
       </div>
     </header>
+    <!-- <div class="container" style="height: 500px; background-color: red; border:1px solid blueviolet;"></div> -->
+    <script>
+      var lastScrollTop = 0;
+      navbar = document.getElementById("header");
+      window.addEventListener("scroll", function () {
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
 
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-100px";
+        } else {
+          navbar.style.top = "0";
+          if (scrollTop === 0) {
+            navbar.classList.remove("scrolled");
+          } else {
+            navbar.classList.add("scrolled");
+          }
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
   </body>
 </html>

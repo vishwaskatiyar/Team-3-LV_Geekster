@@ -1,0 +1,2 @@
+
+data_array = ['10_women_coussin_DII', '170_women_sunglasses_cat_eye_DII', '40_women_earrings_DII', '110_women_romantic_symphony_DI3', '160_women_sport_lifestyle_ski_DI3', '30_women_perfumes_DII', '60_women_shoes_DII', '70_women_wallet_DII']

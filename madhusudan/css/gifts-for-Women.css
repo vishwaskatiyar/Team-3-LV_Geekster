@@ -1,0 +1,269 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body > #container section .links a{
+    /* display: inline-block; */
+    color: black;
+    padding: 0 32px;
+    text-underline-offset: 14px;
+    font-size: medium;
+  }
+  body > #container .hr {
+    border: none;
+    border-top: 0.5px solid rgba(128, 128, 128, 0.421);
+  }
+  body > #container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  body > #container section {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  body > #container section.videobg {
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+  }
+  
+  body > #container .videobg .video {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(85%);
+  }
+  body > #container .videobg .content {
+    position: absolute;
+    bottom: calc(11% + 8rem);
+    z-index: 1;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+  body > #container .videobg .content h2{
+    font-size: 5vw;
+  }
+  body > #container .videobg .main_button {
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    bottom: 11%;
+    z-index: 1;
+  }
+  body > #container .videobg button {
+    width: 15rem;
+    padding: 15px 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(45px);
+    border: 1px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  body > #container .videobg button:hover {
+    box-shadow: inset 0 0 0 1px white;
+  }
+  
+  body > #container .videobg .audioicon {
+    position: absolute;
+    left: 3%;
+    font-size: 16px;
+    top: 90%;
+  }
+  body > #container .videobg .audioicon1 {
+    position: absolute;
+    right: 3%;
+    top: 90%;
+    font-size: 16px;
+  }
+  
+  body > #container section.imagebg-scroll{
+    color: white;
+    border: 1px solid blue;
+  }
+  body > #container section.imagebg-scroll .image-scroll{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/content/louis-vuitton--BC_WOMEN_REMIX_VISUAL_LVCOM_1600x2000_DII_BALANCE_08.png);
+    background-position: center 0;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+  }
+  body > #container section.imagebg-scroll .h1-scroll{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    /* color: black; */
+    /* background: linear-gradient(rgba(10, 10, 10, 0.5),rgba(0, 0, 0, 0.9)); */
+  }
+  body > #container section.collections{
+    width: 100vw;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    background-color: lightgray;
+    aspect-ratio: 8/5;
+  }
+  body > #container section.collections .items-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,32vw);    
+    justify-content: space-around;
+    /* border: 1px solid blue; */
+  }
+  body > #container section.collections .items-grid *{
+    border-radius: 15%;
+  }
+  body > #container section.collections .items-grid .items-section{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    row-gap: 1vw;
+    flex-wrap: wrap;
+  }
+  body > #container section.collections .items-grid .items-section .big-item{
+    width: 100%;
+    aspect-ratio: 4/5;
+    border: 1px solid red;
+  }
+  body > #container section.collections .items-grid .items-section .small-item{
+    width: 48%;
+    aspect-ratio: 4/5;
+    border: 1px solid blue;
+  }
+
+  body > #container section.footer .content{
+    padding: 60px 0;
+  }
+  body > #container section.footer .content p{
+    font-size: 34px;
+    padding-bottom: 150px;
+    padding-top: 50px;
+  }
+  body > #container section.footer .images-section {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100vw;
+    position: relative;
+    border: 1px solid greenyellow;
+    overflow-x: hidden;
+  }
+  body > #container section.footer .images-section .image{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 1rem;
+    width: 30vw;
+    aspect-ratio: 4/5;
+    margin: 16px;
+    border: 1px solid black;
+  }
+  body > #container section.footer .images-section .scroll-btn{
+    position: absolute;
+    top: 45%;
+    display: flex;
+    width: 100vw;
+    margin: auto;
+    justify-content: space-between;
+  }
+  body > #container section.footer .images-section .scroll-btn button{
+    margin: 0 36px;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    scale: 1.5;
+    font-size: xx-small;
+    border-style: none;
+  }
+  body > #container section.footer .images-section .scroll-btn button:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  /* body > #container section.footer .images-section .scroll-btn .left-btn:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  body > #container section.footer .images-section .scroll-btn .right-btn:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+  } */
+
+  #footer-image1{
+    background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("../images/content/10.png");
+  }
+  #footer-image2{
+    background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("../images/content/11.png");
+  }
+  #footer-image3{
+    background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("../images/content/12.png");
+  }
+  #footer-image4{
+    background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("../images/content/13.png");
+  }
+  #footer-image5{
+    background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("../images/content/14.png");
+  }
+
+  /* =====================MEDIUM DEVICES===== */
+  @media screen and (max-width: 64rem) {
+    body > #container .videobg .main_button {
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+      max-width: 35rem;
+      margin: auto;
+    }
+  }
+  
+  @media screen and (max-width: 48rem) {
+    body > #container .videobg .main_button button{
+      /* flex-direction: column; */
+      width: 12rem;
+      font-size: medium;
+      margin: auto;
+    }
+    body > #container .videobg .content{
+      top: 20%;
+    }
+  }
+  
