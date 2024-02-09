@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="page-name" content="Art-Of-Living" />
     <title>
         Art of Living Campaign Collection for Art of Living | LOUIS VUITTON
     </title>
@@ -12,14 +13,20 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(function () {
-        $("#header").load("../global-templates/header.html");
+        $("#header").load("../global-templates/header.html", function () {
+          $(function () {
+            setTimeout(function () {
+              $("#myScript").load("../global-script/script.js");
+            }, 2000);
+          });
+        });
         $("#footer").load("../global-templates/footer.html");
       });
     </script>
-</head>
-
-<body>
-    <header id="header"></header>
+    <script id="myScript"></script>
+  </head>
+  <body>
+    <header id="header" style="position: fixed; top: 0;"></header>
     <div id="container">
         <section class="first-sect">
             <h1>Art of Living Campaign</h1>
@@ -888,9 +895,9 @@
             </div>
         </section>
         <!------------------------------------------------ videos/Art-Of-Living-Page/video ------------------------------------------------->
-        <section class="videos/Art-Of-Living-Page/video-container">
+        <!-- <section class="videos/Art-Of-Living-Page/video-container">
             <div class="vid">
-                <videos/Art-Of-Living-Page/video src="videos/Art-Of-Living-Page/video/Art-Of-Living-Page-videos/Art-Of-Living-Page/video.mp4" autoplay loop muted controls></videos/Art-Of-Living-Page/video>
+                <video src="./videos/Art-Of-Living-Page/video/Art-Of-Living-Page-Video.mp4" autoplay loop muted controls></video>
             </div>
             <div class="vid-content">
                 <h3>Art of Living</h3>
@@ -899,7 +906,7 @@
                 </p>
                 <a href="https://eu.louisvuitton.com/eng-e1/stories/art-of-living-campaign">Discover more</a>
             </div>
-        </section>
+        </section> -->
         <!------------------------------------------------ videos/Art-Of-Living-Page/video ------------------------------------------------>
         <!------------------------------------------- videos/Art-Of-Living-Page/video FOR MOBILE ------------------------------------------->
         <div class="vid-content-mobile">
