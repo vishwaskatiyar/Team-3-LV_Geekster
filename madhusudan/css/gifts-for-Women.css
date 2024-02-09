@@ -3,29 +3,30 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
   }
-  body > #container section .links a{
+  #container section .links a{
     /* display: inline-block; */
     color: black;
     padding: 0 32px;
     text-underline-offset: 14px;
     font-size: medium;
   }
-  body > #container .hr {
+  #container .hr {
     border: none;
     border-top: 0.5px solid rgba(128, 128, 128, 0.421);
   }
-  body > #container {
+  #container {
     display: flex;
     flex-direction: column;
     width: 100vw;
   }
-  body > #container section {
+  #container section {
     font-size: 24px;
     text-align: center;
   }
   
-  body > #container section.videobg {
+  #container section.videobg {
     color: white;
     position: relative;
     display: flex;
@@ -34,12 +35,12 @@ body {
     height: 90vh;
   }
   
-  body > #container .videobg .video {
+  #container .videobg .video {
     width: 100%;
     object-fit: cover;
     filter: brightness(85%);
   }
-  body > #container .videobg .content {
+  #container .videobg .content {
     position: absolute;
     bottom: calc(11% + 8rem);
     z-index: 1;
@@ -47,17 +48,17 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
   }
-  body > #container .videobg .content h2{
+  #container .videobg .content h2{
     font-size: 5vw;
   }
-  body > #container .videobg .main_button {
+  #container .videobg .main_button {
     position: absolute;
     display: flex;
     gap: 1rem;
     bottom: 11%;
     z-index: 1;
   }
-  body > #container .videobg button {
+  #container .videobg button {
     width: 15rem;
     padding: 15px 0;
     color: white;
@@ -70,38 +71,36 @@ body {
     cursor: pointer;
     transition: 0.2s;
   }
-  body > #container .videobg button:hover {
+  #container .videobg button:hover {
     box-shadow: inset 0 0 0 1px white;
   }
   
-  body > #container .videobg .audioicon {
+  #container .videobg .audioicon {
     position: absolute;
     left: 3%;
     font-size: 16px;
     top: 90%;
   }
-  body > #container .videobg .audioicon1 {
+  #container .videobg .audioicon1 {
     position: absolute;
     right: 3%;
     top: 90%;
     font-size: 16px;
   }
   
-  body > #container section.imagebg-scroll{
+  #container section.imagebg-scroll{
     color: white;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
-  body > #container section.imagebg-scroll .image-scroll{
+  #container section.imagebg-scroll .image-scroll{
     width: 100vw;
-    height: 100vh;
-    background-image: url(../images/content/louis-vuitton--BC_WOMEN_REMIX_VISUAL_LVCOM_1600x2000_DII_BALANCE_08.png);
-    background-position: center 0;
-    background-size: cover;
+    height: 100vh;    
+    object-fit: cover;
     position: sticky;
     top: 0;
     z-index: -1;
   }
-  body > #container section.imagebg-scroll .h1-scroll{
+  #container section.imagebg-scroll .h1-scroll{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -112,7 +111,7 @@ body {
     /* color: black; */
     /* background: linear-gradient(rgba(10, 10, 10, 0.5),rgba(0, 0, 0, 0.9)); */
   }
-  body > #container section.collections{
+  #container section.collections{
     width: 100vw;
     padding: 15px 0;
     display: flex;
@@ -121,17 +120,17 @@ body {
     background-color: lightgray;
     aspect-ratio: 8/5;
   }
-  body > #container section.collections .items-grid{
+  #container section.collections .items-grid{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,32vw);    
     justify-content: space-around;
     /* border: 1px solid blue; */
   }
-  body > #container section.collections .items-grid *{
+  #container section.collections .items-grid *{
     border-radius: 15%;
   }
-  body > #container section.collections .items-grid .items-section{
+  #container section.collections .items-grid .items-section{
     display: flex;
     width: 100%;
     height: 100%;
@@ -139,34 +138,45 @@ body {
     row-gap: 1vw;
     flex-wrap: wrap;
   }
-  body > #container section.collections .items-grid .items-section .big-item{
+  #container section.collections .items-grid .items-section .big-item{
     width: 100%;
     aspect-ratio: 4/5;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background-color: #fff;
   }
-  body > #container section.collections .items-grid .items-section .small-item{
+  #container section.collections .items-grid .items-section .big-item img{
+    width: 100%;
+    aspect-ratio: 4/5;
+  }
+  #container section.collections .items-grid .items-section .small-item{
     width: 48%;
     aspect-ratio: 4/5;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    background-color: #fff;
+  }
+  #container section.collections .items-grid .items-section .small-item img{
+    width: 100%;
+    aspect-ratio: 4/5;
   }
 
-  body > #container section.footer .content{
+  #container section.footer .content{
     padding: 60px 0;
   }
-  body > #container section.footer .content p{
+  #container section.footer .content p{
     font-size: 34px;
     padding-bottom: 150px;
     padding-top: 50px;
   }
-  body > #container section.footer .images-section {
+  #container section.footer .images-section {
     display: grid;
     grid-template-columns: repeat(5,1fr);
     width: 100vw;
     position: relative;
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     overflow-x: hidden;
+    background-color: rgb(10,10,10,0.3);
   }
-  body > #container section.footer .images-section .image{
+  #container section.footer .images-section .image{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -175,9 +185,9 @@ body {
     width: 30vw;
     aspect-ratio: 4/5;
     margin: 16px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
-  body > #container section.footer .images-section .scroll-btn{
+  #container section.footer .images-section .scroll-btn{
     position: absolute;
     top: 45%;
     display: flex;
@@ -185,22 +195,22 @@ body {
     margin: auto;
     justify-content: space-between;
   }
-  body > #container section.footer .images-section .scroll-btn button{
+  #container section.footer .images-section .scroll-btn button{
     margin: 0 36px;
     height: 22px;
     width: 22px;
     border-radius: 50%;
     scale: 1.5;
     font-size: xx-small;
-    border-style: none;
+    border:0.1px solid gray;
   }
-  body > #container section.footer .images-section .scroll-btn button:hover{
+  #container section.footer .images-section .scroll-btn button:hover{
     background-color: rgba(0, 0, 0, 0.3);
   }
-  /* body > #container section.footer .images-section .scroll-btn .left-btn:hover{
+  /* #container section.footer .images-section .scroll-btn .left-btn:hover{
     background-color: rgba(0, 0, 0, 0.3);
   }
-  body > #container section.footer .images-section .scroll-btn .right-btn:hover{
+  #container section.footer .images-section .scroll-btn .right-btn:hover{
     background-color: rgba(0, 0, 0, 0.3);
   } */
 
@@ -210,7 +220,7 @@ body {
       transparent 50%,
       rgba(0, 0, 0, 0.85)
     ),
-    url("../images/content/10.png");
+    url("../images/gifts-for-women/footer/footer-1.png");
   }
   #footer-image2{
     background-image: linear-gradient(
@@ -218,7 +228,7 @@ body {
       transparent 50%,
       rgba(0, 0, 0, 0.85)
     ),
-    url("../images/content/11.png");
+    url("../images/gifts-for-women/footer/footer-2.png");
   }
   #footer-image3{
     background-image: linear-gradient(
@@ -226,7 +236,7 @@ body {
       transparent 50%,
       rgba(0, 0, 0, 0.85)
     ),
-    url("../images/content/12.png");
+    url("../images/gifts-for-women/footer/footer-3.png");
   }
   #footer-image4{
     background-image: linear-gradient(
@@ -234,7 +244,7 @@ body {
       transparent 50%,
       rgba(0, 0, 0, 0.85)
     ),
-    url("../images/content/13.png");
+    url("../images/gifts-for-women/footer/footer-4.png");
   }
   #footer-image5{
     background-image: linear-gradient(
@@ -242,12 +252,21 @@ body {
       transparent 50%,
       rgba(0, 0, 0, 0.85)
     ),
-    url("../images/content/14.png");
+    url("../images/gifts-for-women/footer/footer-5.png");
   }
 
+  #container section.footer .images-section .image > button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  #container section.footer .images-section .image > button:hover{
+    box-shadow: inset 0 0 0 1px white;
+  }
   /* =====================MEDIUM DEVICES===== */
   @media screen and (max-width: 64rem) {
-    body > #container .videobg .main_button {
+    #container .videobg .main_button {
       /* flex-direction: column; */
       flex-wrap: wrap;
       max-width: 35rem;
@@ -256,13 +275,13 @@ body {
   }
   
   @media screen and (max-width: 48rem) {
-    body > #container .videobg .main_button button{
+    #container .videobg .main_button button{
       /* flex-direction: column; */
       width: 12rem;
       font-size: medium;
       margin: auto;
     }
-    body > #container .videobg .content{
+    #container .videobg .content{
       top: 20%;
     }
   }
