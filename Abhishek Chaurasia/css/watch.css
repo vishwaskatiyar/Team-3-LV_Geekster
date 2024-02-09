@@ -1,10 +1,18 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body{
   overflow-x: hidden;
 }
-
-#Container1 {
+#header{
+  z-index: 2;
+}
+#container{
+  z-index: 1;
+}
+#container111 {
   color: inherit;
   color: #19110b;
   font-family: "Louis Vuitton Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
@@ -20,8 +28,9 @@ section {
   text-align: center;
 }
 
+
 /* ---------- Video Part ------------ */
-.videobg {
+#container .videobg {
   position: relative;
   display: flex;
   justify-content: center;
@@ -30,14 +39,14 @@ section {
   overflow: hidden;
 }
 
-.video {
+#container .video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: brightness(85%);
 }
 
-.videobg h2 {
+#container .videobg h2 {
   position: absolute;
   top: 81.2%;
   left: 50%;
@@ -50,7 +59,7 @@ section {
 }
 
 
-.videobg button {
+#container .videobg button {
   position: absolute;
   top: 91%;
   left: 50%;
@@ -70,12 +79,12 @@ section {
   transition: 0.2s;
 }
 
-.videobg button:hover {
+#container .videobg button:hover {
   box-shadow: inset 0 0 0 1px white;
 }
 
-/* ---------- Container Part ------------ */
-.container {
+/* ---------- container11 Part ------------ */
+/* .container11 {
   background-color: black;
   position: absolute;
   right: 0;
@@ -87,7 +96,7 @@ section {
   overflow: hidden;
 }
 
-.line {
+#container .line {
   position: absolute;
   top: 0;
   left: 0;
@@ -109,28 +118,28 @@ section {
   100% {
     transform: translateY(0);
   }
-}
+} */
 
 /* -----------------pause and mute -------- */
-i {
+#container i {
   color: white;
   font-size: 21px;
 }
 
-.icon .fa-pause {
+#container .icon .fa-pause {
   position: absolute;
   top: 118%;
   left: 50px;
 }
 
-.icon .fa-volume-xmark {
+#container .icon .fa-volume-xmark {
   position: absolute;
   top: 118%;
   right: 50px;
 }
 
 /* -------------- nav part --------- */
-.navbar {
+#container .navbar {
   background-color: transparent;
   color: #fff;
   position: fixed;
@@ -141,25 +150,25 @@ i {
   z-index: 100;
 }
 
-.navbar {
+#container .navbar {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 30px 0 30px 75px;
 }
 
-.navbar.scrolled {
+#container .navbar.scrolled {
   opacity: 1;
 }
 
-.navbar {
+#container .navbar {
   background: rgba(0, 0, 0, .8);
   border-bottom-color: rgba(255, 255, 255, .1);
 }
 
 /* ---------- Content Part ------------ */
 
-.content {
+#container .content {
   padding: 60px 0 80px 0;
   display: flex;
   justify-content: center;
@@ -168,7 +177,7 @@ i {
   color: #fff;
 }
 
-.content p {
+#container .content p {
   max-width: 44rem;
   font-size: 1.2rem;
   font-weight: 400;
@@ -180,7 +189,7 @@ i {
 
 /* ---------- Image Part ------------ */
 
-.imagebg {
+#container .imagebg {
   height: 110vh;
   display: flex;
   justify-content: center;
@@ -189,41 +198,41 @@ i {
 }
 
 #image1 {
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('asset/LV-Watch.avif');
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('../asset/watch/LV-Watch.avif');
 
   background-size: cover;
   background-position: center;
 }
 
 #image2 {
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('asset/LV-Watch2.webp');
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('../asset/watch/LV-Watch2.webp');
 
   background-size: cover;
   background-position: center;
 }
 
 #image3 {
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('asset/LV-Watch3.avif');
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('../asset/watch/LV-Watch3.avif');
 
   background-size: cover;
   background-position: center;
 }
 
 #image4 {
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('asset/LV-Watch4.avif');
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('../asset/watch/LV-Watch4.avif');
 
   background-size: cover;
   background-position: center;
 }
 
 #image5 {
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('asset/LV-Watch5.webp');
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('../asset/watch/LV-Watch5.webp');
 
   background-size: cover;
   background-position: center;
 }
 
-.imagebg h2 {
+#container .imagebg h2 {
   position: absolute;
   top: 77.2%;
   left: 200px;
@@ -234,7 +243,7 @@ i {
   font-family: 'Poppins', sans-serif;
 }
 
-.imagebg button {
+#container .imagebg button {
   position: absolute;
   top: 88%;
   /* left: 50%; */
@@ -252,18 +261,18 @@ i {
   transition: 0.2s;
 }
 
-.imagebg button:hover {
+#container .imagebg button:hover {
   box-shadow: inset 0 0 0 1px white;
 }
 
 /* ---------- Content Part ------------ */
-.content2 {
+#container .content2 {
   padding: 60px 0 80px 0;
   background-color: black;
   color: #fff;
 }
 
-.content2 .discover {
+#container .content2 .discover {
   max-width: 44rem;
   font-size: 1.2rem;
   font-weight: 400;
@@ -274,7 +283,7 @@ i {
   margin: auto;
 }
 
-.content2 .discover button {
+#container .content2 .discover button {
   padding: 20px 120px;
   font-size: 20px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -288,14 +297,14 @@ i {
   margin-top: 30px;
 }
 
-.discover button:hover {
+#container .discover button:hover {
   box-shadow: inset 0 0 0 1px rgb(238, 12, 12);
 }
 
 /* ---------- div watchmaking Part ------------ */
-.watchMaking {
+#container .watchMaking {
   height: 110vh;
-  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('asset/WatchMaking.avif');
+  background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('../asset/watch/WatchMaking.avif');
 
   background-size: cover;
   background-position: center;
@@ -376,31 +385,31 @@ i {
 
 
 #image1 button{
-  background-image: url(asset/LV-Watch.avif);
+  background-image: url(../asset/watch/LV-Watch.avif);
   background-size: cover;
   background-position: center;
   color: #fff;
 }
 #image2 button{
-  background-image: url(asset/LV-Watch2.webp);
+  background-image: url(../asset/watch/LV-Watch2.webp);
   background-size: cover;
   background-position: center;
   color: #fff;
 }
 #image3 button{
-  background-image: url(asset/LV-Watch3.avif);
+  background-image: url(../asset/watch/LV-Watch3.avif);
   background-size: cover;
   background-position: center;
   color: #fff;
 }
 #image4 button{
-  background-image: url(asset/LV-Watch4.avif);
+  background-image: url(../asset/watch/LV-Watch4.avif);
   background-size: cover;
   background-position: center;
   color: #fff;
 }
 #image5 button{
-  background-image: url(asset/LV-Watch5.webp);
+  background-image: url(../asset/watch/LV-Watch5.webp);
   background-size: cover;
   background-position: center;
   color: #fff;
