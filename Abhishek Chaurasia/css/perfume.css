@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#Container1 {
+#container111 {
     color: inherit;
     color: #19110b;
     font-family: "Louis Vuitton Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
@@ -21,8 +21,9 @@ header .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
-    position: fixed;
+    /* padding: 30px; */
+    position: sticky;
+    top: 0;
     z-index: 2;
     width: 100%;
 }
@@ -36,7 +37,7 @@ header .navbar {
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 80px;
+    /* padding-top: 80px; */
 }
 .main2 {
     display: grid;
@@ -44,11 +45,11 @@ header .navbar {
     /* padding-top: 70px; */
 }
 
-.container img{
+.container11 img{
     width: 100%;
     aspect-ratio: 4/4;
 }
-.container{
+.container11{
     aspect-ratio: 4/5;
 }
 
@@ -104,7 +105,7 @@ header .navbar {
 }
 
 #image1 {
-    background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('assets/bgImage.avif');
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('../asset/perfume/bgImage.avif');
 
     background-size: cover;
     background-position: center;
@@ -169,7 +170,7 @@ button{
     }
 }
 
-.container{
+.container11{
     position: relative;
 }
 .icon .fa-less-than{
@@ -190,7 +191,7 @@ button{
     color: #19110b;
     font-size: 15px;
 }
-.container:hover{
+.container11:hover{
     .icon{
         opacity: 1;
     }
