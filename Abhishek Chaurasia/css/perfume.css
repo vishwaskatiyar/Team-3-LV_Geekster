@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container111 {
+    color: inherit;
+    color: #19110b;
+    font-family: "Louis Vuitton Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .025rem;
+    line-height: 1.5rem;
+    overflow-x: hidden;
+}
+
+/* --------------------Navbar------------------------ */
+header .navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 30px; */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.gifts {
+    padding-left: 20px;
+}
+
+/* ------------------------main----------------------------- */
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* padding-top: 80px; */
+}
+.main2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* padding-top: 70px; */
+}
+
+.container11 img{
+    width: 100%;
+    aspect-ratio: 4/4;
+}
+.container11{
+    aspect-ratio: 4/5;
+}
+
+.picture {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/4;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.image1 {
+    position: absolute;
+}
+
+.price {
+    padding: 0.75rem 1rem;
+    line-height: 30px;
+}
+
+.p1 {
+    background-image: linear-gradient(#ddd6d6, #fffdfd);
+}
+
+.p2 {
+    background-image: linear-gradient(#efe8e8, #fffdfd);
+}
+
+.p3 {
+    background-image: linear-gradient(#dedada, #fffdfd);
+}
+
+.p4 {
+    background-image: linear-gradient(#efe8e8, #fffdfd);
+}
+
+/* -----------------Bg-Image------------------------- */
+
+.imagebg {
+    width: 100vw;
+    aspect-ratio: 1/0.56274;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@media screen and (max-width: 48rem) {
+    .imagebg{
+        aspect-ratio: 4/5;
+    }
+}
+
+#image1 {
+    background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.85)), url('../asset/perfume/bgImage.avif');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.abhi{
+    position: absolute;
+    width: 45%;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.imagebg span {
+    font-size: 30px;
+}
+
+@media screen and (max-width:431px) {
+    .abhi{
+        opacity: 0;
+    }
+}
+/* -----------button---------- */
+.button{
+    position: sticky;
+}
+
+button {
+    height: 46px;
+    position: absolute;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.5);
+    border-radius: 23px;
+    line-height: 1;
+    background: #000;
+    right: 0;
+    bottom: 0;
+}
+.chatButton button a{
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 17px;
+    text-decoration: none;
+} 
+button:hover{
+    a{
+        text-decoration: underline;
+    }
+}
+button{
+    position: fixed;
+}
+
+@media only screen and (max-width:700px){
+    .main{
+        grid-template-columns: 1fr 1fr;
+    }
+    .main2{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.container11{
+    position: relative;
+}
+.icon .fa-less-than{
+    position: absolute;
+    bottom: 50%;
+    left: 3%;
+}
+.icon .fa-greater-than{
+    position: absolute;
+    bottom: 50%;
+    left: 93%;
+}
+.icon{
+    opacity: 0;
+    transition: 0.4s;
+}
+.icon i{
+    color: #19110b;
+    font-size: 15px;
+}
+.container11:hover{
+    .icon{
+        opacity: 1;
+    }
+}
+
