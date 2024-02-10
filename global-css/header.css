@@ -96,7 +96,7 @@ header#header nav .mainMenu .main {
   display: flex;
   justify-content: space-between;
   width: 25vw;
-  padding: 16px 0;
+  padding: 12px 0;
   padding-left: 10px;
   border: 0.1px solid gray;
 }
@@ -193,7 +193,7 @@ header#header nav .search-icon .search-bar {
   display: none;
   position: absolute;
   left: 0;
-  top: 6rem;
+  top: 5.5rem;
   justify-content: center;
   width: 100vw;
   padding: 16px 0;
