@@ -1,126 +1,125 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Louis Vuitton Web", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Louis Vuitton Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
-footer#footer section a{
-    display: inline-block;
-    font-style: 13px;
-    text-decoration: none;
-    color: #000;
+footer#footer section a {
+  display: inline-block;
+  font-style: 13px;
+  text-decoration: none;
+  color: #000;
 }
-footer#footer section p a{
-    text-decoration: underline;
-    text-underline-offset: 2px;
+footer#footer section p a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 footer#footer {
-    display: flex;
-    flex-direction: column-reverse;
-    column-gap: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  column-gap: 2rem;
 }
-footer#footer > .logo{
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    padding-bottom: 3.5rem;
+footer#footer > .logo {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 3.5rem;
 }
-footer#footer section{
-    display: grid;
-    justify-content: center;
-    padding: 4.6875vw 40px;
+footer#footer section {
+  display: grid;
+  justify-content: center;
+  padding: 4.6875vw 40px;
 }
-footer#footer section:nth-child(1){
-    grid-template-columns: repeat(4,1fr);
-    border-bottom: 1px solid gray;
+footer#footer section:nth-child(1) {
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid gray;
 }
-footer#footer section .content .name{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 24px;
-    font-size: 16px;
-    text-transform: uppercase;
+footer#footer section .content .name {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  font-size: 16px;
+  text-transform: uppercase;
 }
-footer#footer section:nth-child(1) .name i{
-    display: none;
+footer#footer section:nth-child(1) .name i {
+  display: none;
 }
-footer#footer section .content .details{
-    display: flex;
+footer#footer section .content .details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+footer#footer section:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+footer#footer section .country {
+  cursor: pointer;
+}
+footer#footer section .country img {
+  display: inline-block;
+  height: 12px;
+  object-fit: cover;
+}
+footer#footer section .country a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0 5px;
+}
+footer#footer section .terms a {
+  padding: 0 5px;
+}
+
+footer#footer section:nth-child(3) {
+  grid-template-columns: repeat(2, 1fr);
+  color: gray;
+  font-size: x-small;
+}
+footer#footer section:nth-child(3) .content .name {
+  padding-bottom: 2rem;
+  font-size: small;
+}
+footer#footer section .content .discription {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+footer#footer section span {
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 64rem) {
+  footer#footer {
     flex-direction: column;
-    row-gap: 1rem;
-}
-
-
-footer#footer section:nth-child(2){
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
-}
-footer#footer section .country{
-    cursor: pointer;
-}
-footer#footer section .country  img{
-    display: inline-block;
-    height: 12px;
-    object-fit: contain;
-}
-footer#footer section .country a{
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    padding: 0 5px;
-}
-footer#footer section .terms a{
-    padding: 0 5px;
-}
-
-
-footer#footer section:nth-child(3){
-    grid-template-columns: repeat(2,1fr);
-    color: gray;
-    font-size: x-small;
-}
-footer#footer section:nth-child(3) .content .name{
-    padding-bottom: 2rem;
-    font-size: small;
-}
-footer#footer section .content .discription{
+  }
+  footer#footer > .logo {
     padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-footer#footer section span{
-    padding: 0 5px;
-}
-
-@media screen and (max-width:64rem){
-   footer#footer{
-        flex-direction: column;
-    }
-   footer#footer > .logo{
-        padding-top: 2rem;
-        padding-bottom: 0;
-    }
-    footer#footer section:nth-child(n){
-        grid-template-columns: 1fr;
-    }
-   footer#footer section:nth-child(1) .content{
-        border-top: 1px solid gray;
-        border-bottom: 1px solid gray;
-    }
-   footer#footer section:nth-child(1) .name{
-        padding-top: 16px;
-        padding-bottom: 16px;
-        text-transform: unset;
-    }
-   footer#footer section:nth-child(1) .name i{
-        display: inline;
-    }
-   footer#footer section:nth-child(1) .content .details{
-        display: none;
-    }
-    footer#footer section:nth-child(2){
-        flex-direction: column-reverse;
-        height: auto;
-        row-gap: 2rem;
-    } 
+    padding-bottom: 0;
+  }
+  footer#footer section:nth-child(n) {
+    grid-template-columns: 1fr;
+  }
+  footer#footer section:nth-child(1) .content {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+  footer#footer section:nth-child(1) .name {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-transform: unset;
+  }
+  footer#footer section:nth-child(1) .name i {
+    display: inline;
+  }
+  footer#footer section:nth-child(1) .content .details {
+    display: none;
+  }
+  footer#footer section:nth-child(2) {
+    flex-direction: column-reverse;
+    height: auto;
+    row-gap: 2rem;
+  }
 }
