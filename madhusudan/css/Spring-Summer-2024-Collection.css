@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Louis Vuitton Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+#container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3.333vw;
+  padding-right: 3.333vw;
+  min-height: 4rem;
+  position: sticky;
+  top: 0px;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid black;
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 16px;
+  /* z-index: 2; */
+}
+#container .filter-box span {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+}
+#container .filter {
+  border: 1px solid black;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+#container .filter:hover {
+  border-width: 2px;
+}
+#container .filter img {
+  height: 16px;
+}
+#container section.videobg {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  width: 100vw;
+  height: 90vh;
+  color: #fff;
+}
+#container .videobg .video {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(85%);
+  }
+#container .videobg .content {
+  position: absolute;
+  bottom: 10vh;
+  z-index: 1;
+  max-width: 30vw;
+  padding-left: 2rem;
+  /* font-size: 25px; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+
+#container .contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(246,246,246);
+}
+#container .contents .content{
+    cursor: pointer;
+    aspect-ratio: 1 / 1.26666;
+}
+#container .contents .image{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(160deg,rgb(223,223,223), rgb(246,246,246));
+    z-index: -1;
+    overflow: hidden;
+}
+#container .contents .image:hover img{
+    scale: 1.08;
+}
+#container .contents .content:hover .image::before{
+    content: "<";
+    font-size: large;
+    font-weight: bolder;
+    position: relative;
+    left: 1%;
+}
+#container .contents .content:hover .image::after{
+    content: ">";
+    font-size: large;
+    font-weight: bolder;
+    position: relative;
+    right: calc(21.8px + 1%);
+}
+#container .contents .image img{
+    width: 100%;
+    height: max-content;
+    object-fit: contain;
+}
+#container .contents .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    padding-left: 3.333%;
+    padding-right: 3.333%;
+
+}
+#container .contents .name{
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+#container .contents .details section{
+    display: flex;
+    justify-content: space-between;
+}
+#container .contents .details section .colors span{
+    padding: 0 2px;
+    margin: 0;
+    border-bottom: 2px solid transparent;
+}
+#container .contents .details section .colors span:hover{
+    border-bottom-color: black;
+}
+#container .contents .details section .colors span a{
+    display: inline-block;
+    margin: auto;
+    border-radius: 50%;
+    border:1px dashed black;
+    height: 12px;
+    width: 12px;
+}
+#container .contents .details section .colors span:nth-child(1) a{
+    background-color: black;
+}
+
+#container footer > div{
+    padding-left: 139px;
+    padding-right: 139px;
+    text-align: center;
+}
+#container footer > div:nth-child(n){
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#container section.imagebg {
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: relative;  
+    background-size: cover;
+    background-position: center 0;
+  }
+  #image1 {
+    background-image: url("../images/Spring-Summer-2024-Collection/imagebg/imgbg-1.png");
+  }
+  #image2 {
+    background-image: url("../images/Spring-Summer-2024-Collection/imagebg/imgbg-2.png");
+  }
+  #image3 {
+    background-image: url("../images/Spring-Summer-2024-Collection/imagebg/imgbg-3.png");
+  }
+  #image4 {
+    background-image: url("../images/Spring-Summer-2024-Collection/imagebg/imgbg-4.png");
+  }
+  #image5 {
+    background-image: url("../images/Spring-Summer-2024-Collection/imagebg/imgbg-5.png");
+  }
+  #image6 {
+    background-image: url("../images/Spring-Summer-2024-Collection/imagebg/imgbg-6.png");
+  }
+  #image7 {
+    background-image: url("../images/Spring-Summer-2024-Collection/imagebg/imgbg-7.png");
+  }
+  #image8 {
+    background-image: url("../images/Spring-Summer-2024-Collection/imagebg/imgbg-8.png");
+  }
+
+@media screen and (max-width:768px){
+    #container .contents{
+        grid-template-columns: 1fr 1fr
+    }
+    #container footer > div{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+    }
+    #container footer button{
+        padding: 16px 50px;
+        border-radius: 25px;
+    }
+}
