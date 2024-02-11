@@ -181,6 +181,39 @@
     background-image: url("../images/Spring-Summer-2024-Collection/imagebg/imgbg-8.png");
   }
 
+  
+@keyframes loader {
+  0%{
+      rotate: 60deg;
+      border-top-color: black;
+  }20%{
+      rotate: 120deg;        
+      border-right-color: black;
+  }40%{
+      rotate: 180deg;
+  }60%{
+      rotate: 240deg;
+      border-bottom-color: black;
+  }80%{
+      rotate: 300deg;
+      /* border-color: black; */
+  }100%{
+      rotate: 360deg;
+      border-color: transparent;
+  }
+}
+#container footer .load-icon{
+  text-align: center;
+  padding-bottom: 20px;
+}#container footer .load-icon span{
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid black;
+  border-radius: 50%;
+  animation: loader 1s infinite;
+}
+
 @media screen and (max-width:768px){
     #container .contents{
         grid-template-columns: 1fr 1fr
