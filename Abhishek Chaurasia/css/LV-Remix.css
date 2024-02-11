@@ -121,7 +121,7 @@ header .navbar {
     left: 0;
     width: 450px;
     height: 354px;
-    background-image: url(pic_background.jpg); 
+    background-image: url(../asset/LV-Remix/pic_background.jpg); 
     background-size: cover;
     opacity: 0; 
     transition: opacity 0.5s;

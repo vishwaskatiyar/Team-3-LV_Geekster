@@ -18,14 +18,21 @@ html{
 }
 
                                               /* FIRST SECTION */
-
+.empty-sp{
+    height: 80px;
+}
 .first-sect{
     color: #76716E;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 93%;
+    width: 100%;
     margin: 2rem auto;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
 }
 
 .first-sect h1{
@@ -92,12 +99,12 @@ html{
 .second-sect .name-and-color .name-sect a{
     text-decoration: none;
     color: #19110B;
-    font-size: 1.2rem;
+    font-size: 12px;
     font-weight: 300;
 }
 
 .second-sect .name-and-color .name-sect p{
-    font-size: 1.2rem;
+    font-size: 12px;
     color: #19110B;
     font-weight: 300;
 }
