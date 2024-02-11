@@ -64,7 +64,7 @@ header .navbar {
 }
  
 
-.p1{
+.pic1{
     position: absolute;
     bottom: 0;
 }
@@ -112,7 +112,7 @@ header .navbar {
     left: 0;
     width: 450px;
     height: 354px;
-    background-image: url(pic_background.jpg); 
+    background-image: url(../asset/pic_background.jpg); 
     background-size: cover;
     opacity: 0; 
     transition: opacity 0.5s;
@@ -144,16 +144,16 @@ header .navbar {
 }
 
 
-.p1{
+.pic1{
     background-image:linear-gradient(#ddd6d6, #f1eded);
 }
-.p2{
+.pic2{
     background-image:linear-gradient(#efe8e8, #d4d0d0);
 }
-.p3{
+.pic3{
     background-image:linear-gradient(#ddd6d6, #f1eded);
 }
-.p4{
+.pic4{
     background-image:linear-gradient(#efe8e8, #d4d0d0);
 }
 .price{
